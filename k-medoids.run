@@ -1,6 +1,9 @@
+reset;
+load amplcsv.dll;
 model k-medoids.mod;
 data k-medoids.dat;
+data floresDistancia.txt;
 show;
-expand;
+#expand;
 option solver cplex;
 solve;
