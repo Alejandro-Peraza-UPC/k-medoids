@@ -1,0 +1,6 @@
+model k-medoids.mod;
+data k-medoids.dat;
+show;
+expand;
+option solver cplex;
+solve;
