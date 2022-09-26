@@ -125,6 +125,13 @@ K = 3             |  K = 5 | K = 10
 ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Condados%20k%3D3.png)  |  ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Condados%20k%3D5.png) |  ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Condados%20k%3D10.png)
 ![](Imagenes%20del%20proyecto%20TX/TexasK3.png)  |  ![](Imagenes%20del%20proyecto%20TX/TexasK5.png) |  ![](Imagenes%20del%20proyecto%20TX/TexasK10.png)
 
+Comments 
+
+For K=3, the three clusters present clear demographic differences. While white and hispanic population dominate in all clusters, there is: a majority of hispanic people in the first cluster (closer to the border with Mexico), a majority of white people in the third cluster, and relatively five times more black population in the second cluster. 
+
+For K=5 there are also interesting differences. Cluster 1 coincides roughly with large urban areas and has moore asian and black population. Cluster 5, which has also a large black population, coincides with metropolitan areas of those large urban areas. Cluster 2,3 and 4 are dominated by white and hispanic population. Cluster 3 is predominantly hispanic (closer to Mexico), cluster 4 is predominantly white and cluster 5 is roughly evenly distributed between these two groups. 
+
+
 
 (MAPA DE LOS RESULTADOS)
 (DEBAJO DEL MAPA DE LOS RESULTADOS PONER ALGUNOS FUN FACTS SOBRE
