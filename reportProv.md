@@ -11,6 +11,9 @@
       - [Formulation 2](#formulation-2)
     - [Section 2.2 Testing the two alternative formulations](#section-22-testing-the-two-alternative-formulations)
     - [Section 2.3: Optimal Branch and Bound solution for the cluster-median problem](#section-23-optimal-branch-and-bound-solution-for-the-cluster-median-problem)
+      - [**K = 3. Means for each cluster**](#k--3-means-for-each-cluster)
+      - [**K = 5. Means for each cluster**](#k--5-means-for-each-cluster)
+      - [**K = 10. Means for each cluster**](#k--10-means-for-each-cluster)
   - [(REST OF SECTIONS)](#rest-of-sections)
 
 ## **Introduction**
@@ -131,11 +134,39 @@ For K=3, the three clusters present clear demographic differences. While white a
 
 For K=5 there are also interesting differences. Cluster 1 coincides roughly with large urban areas and has moore asian and black population. Cluster 5, which has also a large black population, coincides with metropolitan areas of those large urban areas. Cluster 2,3 and 4 are dominated by white and hispanic population. Cluster 3 is predominantly hispanic (closer to Mexico), cluster 4 is predominantly white and cluster 5 is roughly evenly distributed between these two groups. 
 
+#### **K = 3. Means for each cluster**
 
+cluster |black|native|asian|islander|multiple|hispanic|white
+|-----|------|-----|--------|--------|--------|-----|-----|
+1 |3     |1    |1       |0       |1       |63   |32    |
+2 |15    |1    |2       |0       |2       |22   |59    |
+3 |4     |1    |1       |0       |2       |20   |74    |
 
-(MAPA DE LOS RESULTADOS)
-(DEBAJO DEL MAPA DE LOS RESULTADOS PONER ALGUNOS FUN FACTS SOBRE
-LO QUE HAY EN CADA GRUPO, EN LETRA PEQUEÑA)
+#### **K = 5. Means for each cluster**
+
+cluster |black|native|asian|islander|multiple|hispanic|white
+|-----|------|-----|--------|--------|--------|-----|-----
+|1    |13    |1    |7       |0       |2       |31   |48    |
+|2    |5     |2    |1       |0       |1       |49   |45    |
+|3    |2     |1    |1       |0       |1       |84   |13    |
+|4    |4     |1    |1       |0       |2       |19   |75    |
+|5    |17    |1    |1       |0       |2       |18   |63    |
+
+#### **K = 10. Means for each cluster**
+
+cluster|black|native|asian|islander|multiple|hispanic|white|
+|-----|------|-----|--------|--------|--------|-----|------|
+|1    |7     |2    |1       |0       |2       |31   |60    |
+|2    |12    |1    |7       |0       |2       |31   |48    |
+|3    |18    |1    |2       |1       |3       |22   |55    |
+|4    |3     |2    |1       |0       |1       |58   |38    |
+|5    |5     |1    |1       |0       |1       |55   |39    |
+|6    |2     |1    |1       |0       |1       |87   |11    |
+|7    |4     |1    |1       |0       |2       |17   |77    |
+|8    |4     |1    |1       |0       |1       |34   |60    |
+|9    |3     |1    |1       |0       |1       |18   |77    |
+|10   |18    |1    |1       |0       |2       |17   |63    |
+
 
 Even though the number of observations is not too large, the solver took a relatively noticeable amount of time in computing the optimal solution. For larger problems (for instance repeating the same problem for the three thousand counties in the US), this could be an issue. We are therefore interested in heuristics that reduce the computation time and provide clusters that are not too different to the optimal ones. We explore this in the following sections. 
 
