@@ -1,9 +1,22 @@
 reset;
-load amplcsv.dll;
 model k-medoids.mod;
-data k-medoids.dat;
-data floresDistancia.txt;
+#data nuevasFlores.csv;
+data counties2.dat;
 show;
-#expand;
 option solver cplex;
-solve;
+
+set cluster_sizes := {3, 5, 10};
+for {cluster_size in cluster_sizes} {
+	let k := cluster_size;
+	display k;
+	solve;
+	display _solve_time;	
+	
+	for {i in M} {
+		for {j in M} {
+			printf "%u ", x[i,j] > ("county_outputs/output_k" & k & ".txt");
+		}
+		printf "\n" > ("county_outputs/output_k" & k & ".txt");
+	}
+}
+
