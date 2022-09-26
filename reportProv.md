@@ -1,9 +1,21 @@
 # **Cluster - Median Problem**
 
-### Alejandro Peraza González
-### Miguel Benítez Humanes
+### Alejandro Peraza González <!-- omit in toc -->
+### Miguel Benítez Humanes <!-- omit in toc -->
+
+- [**Cluster - Median Problem**](#cluster---median-problem)
+  - [**Introduction**](#introduction)
+  - [**Section 2**](#section-2)
+    - [Section 2.1 Definition of the clustering optimization problem](#section-21-definition-of-the-clustering-optimization-problem)
+      - [Formulation 1](#formulation-1)
+      - [Formulation 2](#formulation-2)
+    - [Section 2.2 Testing the two alternative formulations](#section-22-testing-the-two-alternative-formulations)
+    - [Section 2.3: Optimal Branch and Bound solution for the cluster-median problem](#section-23-optimal-branch-and-bound-solution-for-the-cluster-median-problem)
+  - [(REST OF SECTIONS)](#rest-of-sections)
 
 ## **Introduction**
+
+
 
 In this report we compare the solutions to a Cluster-Median problem provided by different optimization methods and heuristics:
 
@@ -81,7 +93,21 @@ Our subset containts 62 observations of three different types of flowers for whi
 
 **Results**
 
-(INCLUIR GRÁFICO CLUSTER CORRECTO, CLUSTER HECHO, NÚMERO DE ACIERTOS Y FALLOS Y TIEMPO DE COMPUTACIÓN)
+
+Correct Clustering             |  Calculated clustering
+:-------------------------:|:-------------------------:
+![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20correcto%20flores.png)  |  ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Flores.png)
+
+The calculated clustering solution varies in two flowers with the correct clustering. Those flowers were from the group *versicolor*. The two clusters *versicolor* and *virginica* partially mix in the frontier between them, which leads to the error obtained in our own clustering.
+
+
+Formulation 1             |  Formulation 2
+:-------------------------:|:-------------------------:
+![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Flores%20Resultados%20Form%201.jpeg)  |  ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Flores%20Resultados%20Form%202.jpeg)
+
+
+
+(INCLUIR GRÁFICO CLUSTER CORRECTO, CLUSTER HECHO, NÚMERO DE ACIERTOS Y FALLOS Y TIEMPO DE COMPUTACIÓN) 
 
 We confirm that formulation 1 is more efficient. Therefore, this is the implementation of the optimization problem we will use to create the clusters for the dataset in next section. 
 
