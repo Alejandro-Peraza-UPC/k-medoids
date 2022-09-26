@@ -98,7 +98,7 @@ Correct Clustering             |  Calculated clustering
 :-------------------------:|:-------------------------:
 ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20correcto%20flores.png)  |  ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Flores.png)
 
-The calculated clustering solution varies in two flowers with the correct clustering. Those flowers were from the group *versicolor*. The two clusters *versicolor* and *virginica* partially mix in the frontier between them, which leads to the error obtained in our own clustering.
+The calculated clustering solution varies in two flowers (60 hits / 2 misses) with the correct clustering. Those flowers were from the group *versicolor*. The two clusters *versicolor* and *virginica* partially mix in the frontier between them, which leads to the error obtained in our own clustering.
 
 
 Formulation 1             |  Formulation 2
@@ -107,7 +107,7 @@ Formulation 1             |  Formulation 2
 
 
 
-(INCLUIR GRÁFICO CLUSTER CORRECTO, CLUSTER HECHO, NÚMERO DE ACIERTOS Y FALLOS Y TIEMPO DE COMPUTACIÓN) 
+(Por qué usa el MIP simplex) 
 
 We confirm that formulation 1 is more efficient. Therefore, this is the implementation of the optimization problem we will use to create the clusters for the dataset in next section. 
 
@@ -119,7 +119,13 @@ After standardizing the percentages, the euclidean distance between each observa
 
 The results are the following for k= 3, 5 and 10 clusters: 
 
-(RESULTADOS DE AMPL)
+
+K = 3             |  K = 5 | K = 10
+:-------------------------:|:-------------------------:|:-------------------------:
+![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Condados%20k%3D3.png)  |  ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Condados%20k%3D5.png) |  ![](Im%C3%A1genes%20del%20proyecto.%20Parte%201/Clustering%20Condados%20k%3D10.png)
+![](Imagenes%20del%20proyecto%20TX/TexasK3.png)  |  ![](Imagenes%20del%20proyecto%20TX/TexasK5.png) |  ![](Imagenes%20del%20proyecto%20TX/TexasK10.png)
+
+
 (MAPA DE LOS RESULTADOS)
 (DEBAJO DEL MAPA DE LOS RESULTADOS PONER ALGUNOS FUN FACTS SOBRE
 LO QUE HAY EN CADA GRUPO, EN LETRA PEQUEÑA)
