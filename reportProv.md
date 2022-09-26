@@ -79,13 +79,9 @@ To test which formulation is faster, we use a small dataset which is a subset of
 
 Our subset containts 62 observations of three different types of flowers for which we specify two variables: petal length and petal width.
 
-**Results for formulation 1:**
+**Results**
 
 (INCLUIR GRÁFICO CLUSTER CORRECTO, CLUSTER HECHO, NÚMERO DE ACIERTOS Y FALLOS Y TIEMPO DE COMPUTACIÓN)
-
-**Results for formulation 2:**
-
-(LO MISMO)
 
 We confirm that formulation 1 is more efficient. Therefore, this is the implementation of the optimization problem we will use to create the clusters for the dataset in next section. 
 
@@ -105,3 +101,4 @@ LO QUE HAY EN CADA GRUPO, EN LETRA PEQUEÑA)
 Even though the number of observations is not too large, the solver took a relatively noticeable amount of time in computing the optimal solution. For larger problems (for instance repeating the same problem for the three thousand counties in the US), this could be an issue. We are therefore interested in heuristics that reduce the computation time and provide clusters that are not too different to the optimal ones. We explore this in the following sections. 
 
 ## (REST OF SECTIONS)
+
